@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <h4>QR Generator</h4>
+    <ul>
+      <li><a href="/">Home</a></li>
+      {{#if user }}
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/auth/logout">Logout</a></li>
+      {{else}}
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      {{/if}}
+    </ul>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="jumbotron">
+      <h1 class="display-4">QR Code Generation</h1>
+      <p class="lead">A QR code (quick-response code) is a type of two-dimensional matrix barcode, invented in 1994, by Japanese company Denso Wave for labelling automobile parts.</p>
+      <hr class="my-4">
+      <p>QR codes have become common in consumer advertising. Typically, a smartphone is used as a QR code scanner, displaying the code and converting it to some useful form (such as a standard URL for a website, thereby obviating the need for a user to type it into a web browser). </p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+</body>
+</html>
